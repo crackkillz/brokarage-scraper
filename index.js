@@ -4,7 +4,7 @@ const Table = require('cli-table');
 
 const fetchData = async () => {
  try {
-  const response = await axios.get('https://www.bizbuysell.com/colorado-businesses-for-sale/');
+  const response = await axios.get('https://www.bizbuysell.com/businesses-for-sale/');
   const html = response.data;
 
   const $ = cheerio.load(html);
