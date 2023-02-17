@@ -1,5 +1,5 @@
-const axios = require("axios");
 const cheerio = require("cheerio");
+const axios = require("axios");
 const Table = require('cli-table');
 const fs = require("fs");
 
@@ -98,4 +98,6 @@ const mergeData = async () => {
     
     mergeData()
     .then((data) => writeDataToFile(data))
-    .catch((error) => console.error('Error: ${error}'));
+    .catch((error) => console.error(`Error: ${error}`));  
+
+    
